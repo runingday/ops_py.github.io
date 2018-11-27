@@ -9,7 +9,7 @@ from paramiko.py3compat import u
 def main():
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    ssh.connect('10.19.126.138', username='root', password='MhxzKhl')
+    ssh.connect('xxx.xxx.xxx.xxx', username='root', password='aaaa')
 
     tran = ssh.get_transport()
     chan = tran.open_session()
